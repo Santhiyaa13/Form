@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form2</title>
+    <style>
+        input[type=text],[type=date],[type=password],[type=email],select,textarea{
+            width: 50%;
+            border: 1px solid black;
+            padding: 7px ;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+
+        }
+        button[type=submit]{
+            border-radius: 5px ;
+            background-color: beige;
+            padding: 10px ;
+        }
+        button[type=reset]{
+            border-radius: 5px;
+            background-color: beige;
+            padding: 10px;
+        }
+        body{
+            background-color: aqua;
+        }
+        .container{
+            padding: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    
+        <form action="login.html" method="get">
+
+        <div class="container">
+            <label for="Username">Username</label>
+            <input type="text" name="Username" id="Username" placeholder="Username" required>
+        </div>
+        <div class="container">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="password">
+        </div>
+        <div class="container">
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date" placeholder="date">
+        </div>
+        <div class="container">
+            <label for="email">email</label>
+            <input type="email" name="email" id="email" placeholder="email">
+        </div>
+        <div>
+            <button type="submit">submit</button>
+            <button type="reset"> reset</button>
+        </div>
+    </form>
+</body>
+</html>
